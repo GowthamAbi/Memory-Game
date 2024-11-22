@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #007bff;
+    color: white;
+    padding: 10px 0;
+    margin-left: 25%;
+    margin-right: 25%;
+
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  #timer {
+    margin-top: 10px;
+    font-size: 1.125rem; /* 18px */
+    color: #fff;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4,90px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 100px;
+    
+  }
+  
+  .card {
+    width: 100%;
+    height: 0;
+    padding-top: 100%; /* Maintain aspect ratio */
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.5s;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card .front,
+  .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  .card .front {
+    background: #fff;
+    color: #333;
+    font-size: 2rem; /* Use rem for scalable font size */
+    transform: rotateY(180deg);
+  }
+  
+  .card .back {
+    background: #007bff; /* Default back color */
+    color: white;
+  }
+  
+  .card .back:hover {
+    background-color: rgb(143, 38, 38);
+    cursor: pointer;
+  }
+  
+  .think {
+    font-size: 4rem; /* Default size */
+    font-weight: 500;
+  }
+  
+  /* Responsive Design: Media Queries */
+  @media (max-width: 768px) {
+    .think {
+      font-size: 3rem; /* Slightly smaller for tablets */
+    }
+    button {
+      font-size: 0.9rem; /* Adjust button size */
+    }
+    header{
+        margin: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .think {
+      font-size: 2rem; /* Smaller size for mobile */
+    }
+    button {
+      font-size: 0.8rem;
+    }
+    .game-board {
+      grid-gap: 10px; /* Reduce gaps */
+    }
+    header{
+        margin: 0;
+    }
+  }
+
+  
