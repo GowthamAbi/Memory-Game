@@ -102,7 +102,7 @@ body {
   
 
   
-  /* Responsive Design: Media Queries */
+  /*  Media Queries */
   @media (max-width: 768px) {
     .think {
       font-size: 3rem; /*  for tablets */

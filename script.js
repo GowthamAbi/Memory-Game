@@ -54,7 +54,7 @@ function createGameBoard(){
          card.innerHTML=
                         `<div class="card-inner">
                          <div class="front"> ${symbol.icon}</div>
-                         <div class="back"></div>
+                         <div class="back">🤔 </div>
                           </div>`
                           
         card.dataset.symbol=symbol.name
