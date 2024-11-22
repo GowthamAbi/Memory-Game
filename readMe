@@ -1,0 +1,30 @@
+# Memory Game
+
+## Description
+The Memory Game is a simple browser-based game where players flip cards to find matching pairs. It is developed using HTML, CSS, and JavaScript for structure, styling, and logic respectively.
+
+## Features
+- 4x4 grid of cards with randomized positions.
+- Cards flip to reveal symbols.
+- Match pairs to win the game.
+- Restart button to reset the game board.
+- Responsive design for desktop and mobile devices.
+
+## How to Play
+1. Click a card to flip it.
+2. Click another card to try and match the pair.
+3. If the cards match, they stay face-up. If not, they flip back after a short delay.
+4. Match all pairs to win the game.
+
+## Installation
+1. Download the project files.
+2. Open `index.html` in any modern web browser.
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript (DOM Manipulation)
+
+## Future Enhancements
+- Add sound effects for matches and mismatches.
+- Include multiple difficulty levels.

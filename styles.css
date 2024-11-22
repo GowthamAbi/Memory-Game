@@ -31,7 +31,7 @@ body {
   
   #timer {
     margin-top: 10px;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem; 
     color: #fff;
   }
   
@@ -49,7 +49,7 @@ body {
   .card {
     width: 100%;
     height: 0;
-    padding-top: 100%; /* Maintain aspect ratio */
+    padding-top: 100%; 
     position: relative;
     transform-style: preserve-3d;
     transform: rotateY(0deg);
@@ -86,12 +86,12 @@ body {
   .card .front {
     background: #fff;
     color: #333;
-    font-size: 2rem; /* Use rem for scalable font size */
+    font-size: 2rem; 
     transform: rotateY(180deg);
   }
   
   .card .back {
-    background: #007bff; /* Default back color */
+    background: #007bff;
     color: white;
   }
   
@@ -101,14 +101,14 @@ body {
   }
   
   .think {
-    font-size: 4rem; /* Default size */
+    font-size: 4rem; 
     font-weight: 500;
   }
   
   /* Responsive Design: Media Queries */
   @media (max-width: 768px) {
     .think {
-      font-size: 3rem; /* Slightly smaller for tablets */
+      font-size: 3rem; /*  for tablets */
     }
     button {
       font-size: 0.9rem; /* Adjust button size */
@@ -120,7 +120,7 @@ body {
   
   @media (max-width: 480px) {
     .think {
-      font-size: 2rem; /* Smaller size for mobile */
+      font-size: 2rem; /* e for mobile */
     }
     button {
       font-size: 0.8rem;
